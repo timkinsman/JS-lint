@@ -1,5 +1,5 @@
-name: 'Run JS Lint'
-description: 'Lint JavaScript code'
+name: 'ESLint Action'
+description: 'Run ESLint'
 runs:
   using: 'node12'
   main: 'dist/index.js'

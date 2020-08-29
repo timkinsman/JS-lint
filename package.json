@@ -1,22 +1,22 @@
 {
-  "name": "JS-lint",
+  "name": "eslint-action",
   "version": "1.0.0",
-  "description": "JavaScript linter GitHub Action",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timkinsman/JS-lint.git"
+    "url": "git+https://github.com/timkinsman/eslint-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/timkinsman/JS-lint/issues"
+    "url": "https://github.com/timkinsman/eslint-action/issues"
   },
-  "homepage": "https://github.com/timkinsman/JS-lint#readme",
+  "homepage": "https://github.com/timkinsman/eslint-action#readme",
   "devDependencies": {
     "eslint": "^7.7.0",
     "eslint-plugin-react": "^7.20.6"

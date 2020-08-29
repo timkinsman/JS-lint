@@ -1,2 +1,1 @@
-# JS-lint
-JavaScript linter GitHub Action
+# eslint-action
