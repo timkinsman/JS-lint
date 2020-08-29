@@ -396,22 +396,10 @@ const github = __webpack_require__(30);
 const glob = __webpack_require__(996);
 
 const run = async () => {
-  console.log(__dirname);
-  console.log('Test1');
   const globber = await glob.create('**/*.js');
-  console.log('Test2');
-
   for await (const file of globber.globGenerator()) {
     console.log(file);
-    console.log('Test3');
   }
-
-  console.log('Test4');
-
-  const gloober = await glob.create('**');
-  const files = await gloober.glob();
-  console.log(files);
-  console.log('Last test');
 }
 
 run();
