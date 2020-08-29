@@ -1,10 +1,10 @@
 name: 'ESLint Action'
 description: 'Run ESLint'
-inputs:
-  autofixes:
-    description: Autofixes lint problems
-    required: false
-    default: false
+#inputs:
+  #autofixes:
+    #description: Autofixes lint problems
+    #required: false
+    #default: false
 runs:
   using: 'node12'
   main: 'index.js'
