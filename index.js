@@ -9,8 +9,9 @@ const run = async () => {
   const results = await eslint.lintFiles("**/*.js");
   
   // 3. Modify the files with the fixed code.
-  console.log('autofixes', core.getInput('autofixes'))
-  if(core.getInput('autofixes') === true) {
+  const autofixes = core.getInput('autofixes');
+  console.log('autofixes', autofixes)
+  if(autofixes === true) {
     console.log('autofixes...');
     await ESLint.outputFixes(results);
   }

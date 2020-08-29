@@ -3,7 +3,7 @@ description: 'Run ESLint'
 inputs:
   autofixes:
     description: Autofixes lint problems
-    required: true
+    required: false
     default: false
 runs:
   using: 'node12'
