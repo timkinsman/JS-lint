@@ -11,7 +11,7 @@ const run = async () => {
   // 3. Modify the files with the fixed code.
   const autofixes = core.getInput('autofixes');
   console.log('autofixes', autofixes)
-  if(autofixes === true) {
+  if(autofixes == true) {
     console.log('autofixes...');
     await ESLint.outputFixes(results);
   }
