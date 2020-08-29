@@ -1,9 +1,5 @@
 name: 'Run JS Lint'
 description: 'Lint JavaScript code'
-inputs:
-  GITHUB_TOKEN:
-    description: 'GitHub token'
-    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
