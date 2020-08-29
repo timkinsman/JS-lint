@@ -6,6 +6,7 @@ const run = async () => {
   const formatter = await eslint.loadFormatter("stylish");
   const resultText = formatter.format(results);
   console.log(resultText);
+  var tim;
 }
 
 run().catch(error => {
