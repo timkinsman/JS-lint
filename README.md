@@ -13,6 +13,7 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1    
+      - uses: actions/checkout@v1
+      - run: npm ci
       - uses: timkinsman/eslint-action@master
 ```
