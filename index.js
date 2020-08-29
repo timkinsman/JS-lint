@@ -3,7 +3,7 @@ const github = require('@actions/github');
 const glob = require('@actions/glob');
 
 (async function() {
-  const globber = await glob.create('**')
+  const globber = await glob.create('**/*.js')
 
   for await (const file of globber.globGenerator()) {
     console.log(file)
