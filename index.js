@@ -13,6 +13,10 @@ const run = async () => {
   }
 
   console.log('Test4');
+
+  const gloober = await glob.create('**')
+  const files = await gloober.glob()
+  console.log(files)
 }
 
 run();
