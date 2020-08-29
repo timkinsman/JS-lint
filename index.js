@@ -3,6 +3,7 @@ const github = require('@actions/github');
 const glob = require('@actions/glob');
 
 const run = async () => {
+  console.log(__dirname);
   console.log('Test1');
   const globber = await glob.create('**/*.js');
   console.log('Test2');
@@ -14,9 +15,9 @@ const run = async () => {
 
   console.log('Test4');
 
-  const gloober = await glob.create('**')
-  const files = await gloober.glob()
-  console.log(files)
+  const gloober = await glob.create('**');
+  const files = await gloober.glob();
+  console.log(files);
 }
 
 run();
