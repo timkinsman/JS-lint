@@ -18,6 +18,7 @@ const run = async () => {
   const gloober = await glob.create('**');
   const files = await gloober.glob();
   console.log(files);
+  console.log('Last test');
 }
 
 run();
