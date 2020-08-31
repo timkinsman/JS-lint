@@ -2,7 +2,7 @@ const core = require('@actions/core')
 const { ESLint } = require('eslint')
 
 const run = async () => {
-  const autofixes = core.getInput('autofixes');
+  const autofixes = core.getInput('autofixes')
 
   // 1. Create an instance with the `fix` option.
   const eslint = new ESLint({ fix: true })
@@ -11,7 +11,7 @@ const run = async () => {
   const results = await eslint.lintFiles('**/*.js')
 
   // 3. Modify the files with the fixed code.
-  if(autofixes === 'true'){
+  if (autofixes === 'true') {
     await ESLint.outputFixes(results)
   }
 
