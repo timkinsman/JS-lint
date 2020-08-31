@@ -1,3 +1,3 @@
-function hi ({ tim }) {
-  return 'hi'
+function hi({tim}){
+  return "hi";
 }
