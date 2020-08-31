@@ -1,4 +1,4 @@
 #!/bin/sh -l
 
-npm i -g eslint
+npm ci
 eslint --ext .js .
