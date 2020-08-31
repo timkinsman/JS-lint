@@ -5,11 +5,7 @@ const run = async () => {
   const autofixes = core.getInput('autofixes');
 
   // 1. Create an instance with the `fix` option.
-  if(autofixes === 'true'){
-    const eslint = new ESLint({ fix: true })
-  }else{
-   const eslint = new ESLint();
-  }
+  const eslint = new ESLint({ fix: true })
 
   // 2. Lint files. This doesn't modify target files.
   const results = await eslint.lintFiles('**/*.js')
