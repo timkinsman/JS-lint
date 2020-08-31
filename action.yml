@@ -6,5 +6,7 @@ description: 'Run ESLint'
     #required: false
     #default: false
 runs:
-  using: 'node12'
-  main: 'index.js'
+  #using: 'node12'
+  #main: 'index.js'
+  using: 'docker'
+  image: 'Dockerfile'
