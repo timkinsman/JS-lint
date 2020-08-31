@@ -12,10 +12,10 @@ const run = async () => {
   // 3. Modify the files with the fixed code.
   const autofixes = core.getInput('autofixes');
   
-  /*if(autofixes === 'true') {
+  if(autofixes === 'true') {
     console.log('autofixes...');
     await ESLint.outputFixes(results);
-  }*/
+  }
 
   // 4. Format the results.
   const formatter = await eslint.loadFormatter("stylish");
