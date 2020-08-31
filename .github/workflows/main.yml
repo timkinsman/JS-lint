@@ -6,8 +6,10 @@ jobs:
   eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1    
-      - uses: timkinsman/eslint-action@master
+      - name: Checkout
+        uses: actions/checkout@v2   
+      - name: ESLint Action step
+        uses: timkinsman/eslint-action@master
         #with:
           #autofixes: true
       
