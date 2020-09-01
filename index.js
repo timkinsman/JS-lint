@@ -5,27 +5,28 @@ const run = async () => {
   const autofixes = core.getInput('autofixes')
 
   // 1. Create an instance with the `fix` option.
-  const eslint = new ESLint({ baseConfig: {
-      "env": {
-        "browser": true,
-        "es2020": true,
-        "node": true
+  const eslint = new ESLint({
+    baseConfig: {
+      env: {
+        browser: true,
+        es2020: true,
+        node: true
       },
-      "extends": [
-        "plugin:react/recommended",
-        "standard"
+      extends: [
+        'plugin:react/recommended',
+        'standard'
       ],
-      "parserOptions": {
-        "ecmaFeatures": {
-          "jsx": true
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true
         },
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        ecmaVersion: 12,
+        sourceType: 'module'
       },
-      "plugins": [
-        "react"
+      plugins: [
+        'react'
       ],
-      "rules": {
+      rules: {
       }
     },
     fix: true
