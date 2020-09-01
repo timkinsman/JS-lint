@@ -34,10 +34,7 @@ const run = async () => {
   const results = await eslint.lintFiles('**/*.js')
 
   if (autofixes === 'true') {
-    console.log('---pre-fix errors---')
-    console.log(await (await eslint.loadFormatter('stylish')).format(results))
     await ESLint.outputFixes(results)
-    console.log('---post-fix errors---')
   }
 
   console.log(await (await eslint.loadFormatter('stylish')).format(results))
