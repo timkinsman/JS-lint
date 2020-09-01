@@ -28,7 +28,7 @@ const run = async () => {
       rules: {
       }
     },
-    fix: autofixes === 'true' ? true : false
+    fix: autofixes === 'true'
   })
 
   const results = await eslint.lintFiles('**/*.js')
