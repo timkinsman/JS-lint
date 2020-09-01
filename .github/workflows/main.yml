@@ -10,14 +10,14 @@ jobs:
         uses: actions/checkout@v2
       - name: ESLint Action step
         uses: timkinsman/eslint-action@master
-        #with:
-          #autofixes: true
-      #- name: Check for changes
-        #run: git status
-      #- name: Commit files
-        #run: |
-          #git config --local user.email "action@github.com"
-          #git config --local user.name "GitHub Action"
-          #git commit -m "ESLint fixes" -a
-          #git push
+        with:
+          autofixes: true
+      - name: Check for changes
+        run: git status
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "ESLint fixes" -a
+          git push
       
